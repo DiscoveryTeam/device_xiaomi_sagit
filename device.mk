@@ -130,8 +130,8 @@ PRODUCT_PACKAGES += \
     MiuiCamera \
     libshim_camera \
     libshim_MiCamera \
-    camera.device@1.0-impl-legacy \
-    android.hardware.camera.provider@2.4-impl-legacy 
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
@@ -336,9 +336,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor-seccomp.policy:system/vendor/etc/seccomp_policy/mediaextractor.policy
 
-# Thermal HAL
+# Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@1.0-service
 
 #USB HAL
 PRODUCT_PACKAGES += \
