@@ -153,6 +153,7 @@ ro.hwui.texture_cache_size=96
 
 #property to enable VDS WFD solution
 persist.hwc.enable_vds=1
+sdm.perf_hint_window=60
 
 #Increase cached app limit
 ro.sys.fw.bg_apps_limit=120
@@ -275,6 +276,10 @@ ro.audio.nojack=true
 audio.adm.buffering.ms=3
 persist.audio.dirac.speaker=true
 persist.audio.speaker.dualmode=true
+#########################################
+# Best openly available quality
+af.resampler.quality=7
+#########################################
 
 # Audio new
 vendor.audio_hal.period_size=192
@@ -306,3 +311,16 @@ vendor.audio.noisy.broadcast.delay=600
 vendor.audio.offload.pstimeout.secs=3
 
 ro.wlan.mimo=1
+
+# USB
+sys.usb.configfs=1
+
+# Higher fling velocities to smooth scrolling
+# and provide better responsiveness
+ro.min.fling_velocity=140
+ro.max.fling_velocity=20000
+
+# dex2oat threads
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-threads=8
