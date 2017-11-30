@@ -305,5 +305,3 @@ vendor.audio.noisy.broadcast.delay=600
 vendor.audio.offload.pstimeout.secs=3
 
 ro.wlan.mimo=1
-
-ro.boot.fingerprint=goodix
