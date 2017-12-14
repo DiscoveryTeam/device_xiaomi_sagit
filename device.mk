@@ -82,7 +82,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    MiuiCamera \
+    GoogleCamera \
+    libcamera_shim \
     libshim_camera \
     libshim_MiCamera
 
